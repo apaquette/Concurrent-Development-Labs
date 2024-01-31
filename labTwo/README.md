@@ -7,8 +7,5 @@ September 25th, 2023
 ### Authors
 Alex Paquette
 
-### GitHub Repo
-https://github.com/apaquette/LabTwo
-
-### Licence
-[GSL] https://www.gnu.org/software/gsl/
+### License
+[GSL](https://www.gnu.org/software/gsl/)
