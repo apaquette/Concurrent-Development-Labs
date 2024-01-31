@@ -7,8 +7,6 @@ November 16th, 2023
 ###Authors
 Alex Paquette
 
-### GitHub Repo
-https://github.com/apaquette/LabSix
 
-###Licence
-[GSL] https://www.gnu.org/software/gsl/
+### License
+[GSL](https://www.gnu.org/software/gsl/)
