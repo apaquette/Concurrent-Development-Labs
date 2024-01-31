@@ -1,5 +1,5 @@
 ### Lab Five
-Five lab for Concurrency Programming.
+Fifth lab for Concurrency Programming.
 
 ### Date Created
 October 16th, 2023
