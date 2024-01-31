@@ -1,0 +1,68 @@
+\hypertarget{classSafeBuffer}{}\doxysection{Safe\+Buffer Class Reference}
+\label{classSafeBuffer}\index{SafeBuffer@{SafeBuffer}}
+
+
+A Buffer Implementation.  
+
+
+
+
+{\ttfamily \#include $<$Safe\+Buffer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSafeBuffer_ab690cf4b2513286825ce710b96b992a7}{Safe\+Buffer}} (int size)
+\begin{DoxyCompactList}\small\item\em Constructor for the Buffer Class with size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSafeBuffer_a34c4c8ca783ed7d80c14461258583e24}{put}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEvent}{Event}} $>$ e)
+\begin{DoxyCompactList}\small\item\em Add an event to the buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSafeBuffer_aff5b0527f70cefef2d82d65c8854a100}\label{classSafeBuffer_aff5b0527f70cefef2d82d65c8854a100}} 
+void \mbox{\hyperlink{classSafeBuffer_aff5b0527f70cefef2d82d65c8854a100}{get}} ()
+\begin{DoxyCompactList}\small\item\em Remove an event from the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Buffer Implementation. 
+
+Uses C++11 features to implement a Buffer class that contains an array of events, as well as Semaphores to controll access to the events array. It contains \mbox{\hyperlink{classSafeBuffer_a34c4c8ca783ed7d80c14461258583e24}{put()}} and \mbox{\hyperlink{classSafeBuffer_aff5b0527f70cefef2d82d65c8854a100}{get()}} methods to add and remove events from the array. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSafeBuffer_ab690cf4b2513286825ce710b96b992a7}\label{classSafeBuffer_ab690cf4b2513286825ce710b96b992a7}} 
+\index{SafeBuffer@{SafeBuffer}!SafeBuffer@{SafeBuffer}}
+\index{SafeBuffer@{SafeBuffer}!SafeBuffer@{SafeBuffer}}
+\doxysubsubsection{\texorpdfstring{SafeBuffer()}{SafeBuffer()}}
+{\footnotesize\ttfamily Safe\+Buffer\+::\+Safe\+Buffer (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructor for the Buffer Class with size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Size of the vector of events \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSafeBuffer_a34c4c8ca783ed7d80c14461258583e24}\label{classSafeBuffer_a34c4c8ca783ed7d80c14461258583e24}} 
+\index{SafeBuffer@{SafeBuffer}!put@{put}}
+\index{put@{put}!SafeBuffer@{SafeBuffer}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily void Safe\+Buffer\+::put (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEvent}{Event}} $>$}]{e }\end{DoxyParamCaption})}
+
+
+
+Add an event to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \mbox{\hyperlink{classEvent}{Event}} to be added to the buffer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Safe\+Buffer.\+h\item 
+Safe\+Buffer.\+cpp\end{DoxyCompactItemize}

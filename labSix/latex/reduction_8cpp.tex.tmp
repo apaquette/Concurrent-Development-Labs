@@ -1,0 +1,117 @@
+\hypertarget{reduction_8cpp}{}\doxysection{map-\/reduce/reduction.cpp File Reference}
+\label{reduction_8cpp}\index{map-\/reduce/reduction.cpp@{map-\/reduce/reduction.cpp}}
+
+
+main file for demonstrating reduction  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$complex$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$omp.\+h$>$}\newline
+Include dependency graph for reduction.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{reduction_8cpp_ab6b513132f81d9de1ab9578e8a02dfe1}{get\+\_\+num\+\_\+threads}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the number of threads that are running. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{reduction_8cpp_a31821d51dd484c9a9ef1f0d911920b2d}{get\+Serial\+Sum}} (vector$<$ int $>$ data)
+\begin{DoxyCompactList}\small\item\em Returns the sum of a vector of integers sequentially. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{reduction_8cpp_a64e8554d4459a361ede8620d842ee3e2}{get\+Parallel\+Sum}} (vector$<$ int $>$ data)
+\begin{DoxyCompactList}\small\item\em Returns the sum of a vector of integers in parallel. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{reduction_8cpp_aa01f1f55a817fa34c952af9917c6f2f3}{get\+Tiled\+Parallelsum}} (vector$<$ int $>$ data)
+\begin{DoxyCompactList}\small\item\em Returns the sum of a vector in tiled parallel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{reduction_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{reduction_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{reduction_8cpp_aa07caf85cdcdc69bc138cb903c343f52}\label{reduction_8cpp_aa07caf85cdcdc69bc138cb903c343f52}} 
+const int {\bfseries LENGTH} =2000
+\item 
+\mbox{\Hypertarget{reduction_8cpp_a761d3655563c63c0b8b291be491291dc}\label{reduction_8cpp_a761d3655563c63c0b8b291be491291dc}} 
+int {\bfseries Num\+Threads} =1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+main file for demonstrating reduction 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{reduction_8cpp_ab6b513132f81d9de1ab9578e8a02dfe1}\label{reduction_8cpp_ab6b513132f81d9de1ab9578e8a02dfe1}} 
+\index{reduction.cpp@{reduction.cpp}!get\_num\_threads@{get\_num\_threads}}
+\index{get\_num\_threads@{get\_num\_threads}!reduction.cpp@{reduction.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_num\_threads()}{get\_num\_threads()}}
+{\footnotesize\ttfamily int get\+\_\+num\+\_\+threads (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of threads that are running. 
+
+Number of threads to be used
+
+\begin{DoxyReturn}{Returns}
+Nubmer of threads running 
+\end{DoxyReturn}
+\mbox{\Hypertarget{reduction_8cpp_a64e8554d4459a361ede8620d842ee3e2}\label{reduction_8cpp_a64e8554d4459a361ede8620d842ee3e2}} 
+\index{reduction.cpp@{reduction.cpp}!getParallelSum@{getParallelSum}}
+\index{getParallelSum@{getParallelSum}!reduction.cpp@{reduction.cpp}}
+\doxysubsubsection{\texorpdfstring{getParallelSum()}{getParallelSum()}}
+{\footnotesize\ttfamily float get\+Parallel\+Sum (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{data }\end{DoxyParamCaption})}
+
+
+
+Returns the sum of a vector of integers in parallel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Vector of ints to calculate the sum of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of the data vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{reduction_8cpp_a31821d51dd484c9a9ef1f0d911920b2d}\label{reduction_8cpp_a31821d51dd484c9a9ef1f0d911920b2d}} 
+\index{reduction.cpp@{reduction.cpp}!getSerialSum@{getSerialSum}}
+\index{getSerialSum@{getSerialSum}!reduction.cpp@{reduction.cpp}}
+\doxysubsubsection{\texorpdfstring{getSerialSum()}{getSerialSum()}}
+{\footnotesize\ttfamily float get\+Serial\+Sum (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{data }\end{DoxyParamCaption})}
+
+
+
+Returns the sum of a vector of integers sequentially. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Vector of ints to calculate the sum of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of the data vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{reduction_8cpp_aa01f1f55a817fa34c952af9917c6f2f3}\label{reduction_8cpp_aa01f1f55a817fa34c952af9917c6f2f3}} 
+\index{reduction.cpp@{reduction.cpp}!getTiledParallelsum@{getTiledParallelsum}}
+\index{getTiledParallelsum@{getTiledParallelsum}!reduction.cpp@{reduction.cpp}}
+\doxysubsubsection{\texorpdfstring{getTiledParallelsum()}{getTiledParallelsum()}}
+{\footnotesize\ttfamily float get\+Tiled\+Parallelsum (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{data }\end{DoxyParamCaption})}
+
+
+
+Returns the sum of a vector in tiled parallel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Vector of ints to calculate the sum of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of the data vector 
+\end{DoxyReturn}

@@ -1,0 +1,56 @@
+\hypertarget{classBarrier}{}\doxysection{Barrier Class Reference}
+\label{classBarrier}\index{Barrier@{Barrier}}
+
+
+An Implementation of a barrier Using Semaphores.  
+
+
+
+
+{\ttfamily \#include $<$Barrier.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBarrier_a401f40e73302009b305904ffc7825304}\label{classBarrier_a401f40e73302009b305904ffc7825304}} 
+\mbox{\hyperlink{classBarrier_a401f40e73302009b305904ffc7825304}{$\sim$\+Barrier}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBarrier}{Barrier}} deconstructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBarrier_a68730c862911d37696957056595aa604}\label{classBarrier_a68730c862911d37696957056595aa604}} 
+\mbox{\hyperlink{classBarrier_a68730c862911d37696957056595aa604}{Barrier}} (int count)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBarrier}{Barrier}} with parameter constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBarrier_a471bfe5ce54384baa7dbd195ae3a7b30}{get\+Count}} ()
+\begin{DoxyCompactList}\small\item\em returns count value \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBarrier_a59b259f25f6acdc5f943398035d2d87a}\label{classBarrier_a59b259f25f6acdc5f943398035d2d87a}} 
+void \mbox{\hyperlink{classBarrier_a59b259f25f6acdc5f943398035d2d87a}{wait\+For\+All}} ()
+\begin{DoxyCompactList}\small\item\em Waits for all the threads before starting second half of code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Implementation of a barrier Using Semaphores. 
+
+A \mbox{\hyperlink{classBarrier}{Barrier}} Implementation.
+
+Uses C++11 features such as mutex and condition variables to implement a barrier using Semaphores with N number threads
+
+Uses C++11 features such as mutex and condition variables to implement a \mbox{\hyperlink{classBarrier}{Barrier}} class using Semaphores 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBarrier_a471bfe5ce54384baa7dbd195ae3a7b30}\label{classBarrier_a471bfe5ce54384baa7dbd195ae3a7b30}} 
+\index{Barrier@{Barrier}!getCount@{getCount}}
+\index{getCount@{getCount}!Barrier@{Barrier}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily int Barrier\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns count value 
+
+\begin{DoxyReturn}{Returns}
+The count of the barrier 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Barrier.\+h\item 
+Barrier.\+cpp\end{DoxyCompactItemize}

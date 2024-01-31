@@ -1,0 +1,77 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+main file for demonstrating producers and consumers  
+
+
+{\ttfamily \#include \char`\"{}Safe\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a3d0719b4bcba12452a2f7b9b40c6c6d9}{producer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSafeBuffer}{Safe\+Buffer}} $>$ the\+Buffer, int num\+Loops)
+\begin{DoxyCompactList}\small\item\em Creates events and adds them to buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a279a06d7a4fa4c1a824324bbd87e848d}{consumer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSafeBuffer}{Safe\+Buffer}} $>$ the\+Buffer, int num\+Loops)
+\begin{DoxyCompactList}\small\item\em Consumes events from buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_aab938108caad0d0e47d6885b5ba2d23a}\label{main_8cpp_aab938108caad0d0e47d6885b5ba2d23a}} 
+const int {\bfseries size} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+main file for demonstrating producers and consumers 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a279a06d7a4fa4c1a824324bbd87e848d}\label{main_8cpp_a279a06d7a4fa4c1a824324bbd87e848d}} 
+\index{main.cpp@{main.cpp}!consumer@{consumer}}
+\index{consumer@{consumer}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{consumer()}{consumer()}}
+{\footnotesize\ttfamily void consumer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSafeBuffer}{Safe\+Buffer}} $>$}]{the\+Buffer,  }\item[{int}]{num\+Loops }\end{DoxyParamCaption})}
+
+
+
+Consumes events from buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+Buffer} & \mbox{\hyperlink{classSafeBuffer}{Safe\+Buffer}} that contains shared events \\
+\hline
+{\em num\+Loops} & Number of times loops through the buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+$<$ Launch the threads ~\newline
+\mbox{\Hypertarget{main_8cpp_a3d0719b4bcba12452a2f7b9b40c6c6d9}\label{main_8cpp_a3d0719b4bcba12452a2f7b9b40c6c6d9}} 
+\index{main.cpp@{main.cpp}!producer@{producer}}
+\index{producer@{producer}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{producer()}{producer()}}
+{\footnotesize\ttfamily void producer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSafeBuffer}{Safe\+Buffer}} $>$}]{the\+Buffer,  }\item[{int}]{num\+Loops }\end{DoxyParamCaption})}
+
+
+
+Creates events and adds them to buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+Buffer} & \mbox{\hyperlink{classSafeBuffer}{Safe\+Buffer}} that contains shared events \\
+\hline
+{\em num\+Loops} & Number of times loops through the buffer \\
+\hline
+\end{DoxyParams}

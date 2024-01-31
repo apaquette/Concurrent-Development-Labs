@@ -1,0 +1,50 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+main file for demonstrating Barriers  
+
+
+{\ttfamily \#include \char`\"{}Barrier.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a96ca7eba915789dab4c11886f423c42b}{task}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBarrier}{Barrier}} $>$ barrier\+Obj)
+\begin{DoxyCompactList}\small\item\em Displays the first function in the barrier being executed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+main file for demonstrating Barriers 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+$<$ An array of threads
+
+$<$ Pointer to barrier object\mbox{\Hypertarget{main_8cpp_a96ca7eba915789dab4c11886f423c42b}\label{main_8cpp_a96ca7eba915789dab4c11886f423c42b}} 
+\index{main.cpp@{main.cpp}!task@{task}}
+\index{task@{task}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{task()}{task()}}
+{\footnotesize\ttfamily void task (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classBarrier}{Barrier}} $>$}]{barrier\+Obj }\end{DoxyParamCaption})}
+
+
+
+Displays the first function in the barrier being executed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em barrier\+Obj} & \mbox{\hyperlink{classBarrier}{Barrier}} object used to wait for other threads to catch up \\
+\hline
+\end{DoxyParams}

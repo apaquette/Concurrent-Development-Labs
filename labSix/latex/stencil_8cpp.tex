@@ -1,0 +1,79 @@
+\hypertarget{stencil_8cpp}{}\doxysection{stencil/stencil.cpp File Reference}
+\label{stencil_8cpp}\index{stencil/stencil.cpp@{stencil/stencil.cpp}}
+
+
+main file for demonstrating stencil  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$complex$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for stencil.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{stencil_8cpp_a16cd13f0a990612823638d179af32bdb}{calc\+Neighbours}} (vector$<$ float $>$ const \&in, int index, vector$<$ float $>$ \&out)
+\item 
+\mbox{\Hypertarget{stencil_8cpp_a37439b563a5dae2d097c1f8ac30d17c5}\label{stencil_8cpp_a37439b563a5dae2d097c1f8ac30d17c5}} 
+void {\bfseries stencil} (vector$<$ float $>$ const \&in, vector$<$ float $>$ \&out, function$<$ float(vector$<$ float $>$) $>$ f, int size)
+\item 
+float \mbox{\hyperlink{stencil_8cpp_a6d6a4c1769d6dd5c00d3c0fb296988fa}{get\+New\+Value}} (vector$<$ float $>$ current\+Values)
+\begin{DoxyCompactList}\small\item\em Returns the new value based on the sum of the current\+Values divided by the count of values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{stencil_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{stencil_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{stencil_8cpp_a589b8b9bfdf714f736059845d568b597}\label{stencil_8cpp_a589b8b9bfdf714f736059845d568b597}} 
+const int {\bfseries DIM} =1000
+\item 
+const int \mbox{\hyperlink{stencil_8cpp_af08413a3ee12cf78b0ddeea71e2648b3}{SIZE}} =4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+main file for demonstrating stencil 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stencil_8cpp_a16cd13f0a990612823638d179af32bdb}\label{stencil_8cpp_a16cd13f0a990612823638d179af32bdb}} 
+\index{stencil.cpp@{stencil.cpp}!calcNeighbours@{calcNeighbours}}
+\index{calcNeighbours@{calcNeighbours}!stencil.cpp@{stencil.cpp}}
+\doxysubsubsection{\texorpdfstring{calcNeighbours()}{calcNeighbours()}}
+{\footnotesize\ttfamily int calc\+Neighbours (\begin{DoxyParamCaption}\item[{vector$<$ float $>$ const \&}]{in,  }\item[{int}]{index,  }\item[{vector$<$ float $>$ \&}]{out }\end{DoxyParamCaption})}
+
+array dimension \mbox{\Hypertarget{stencil_8cpp_a6d6a4c1769d6dd5c00d3c0fb296988fa}\label{stencil_8cpp_a6d6a4c1769d6dd5c00d3c0fb296988fa}} 
+\index{stencil.cpp@{stencil.cpp}!getNewValue@{getNewValue}}
+\index{getNewValue@{getNewValue}!stencil.cpp@{stencil.cpp}}
+\doxysubsubsection{\texorpdfstring{getNewValue()}{getNewValue()}}
+{\footnotesize\ttfamily float get\+New\+Value (\begin{DoxyParamCaption}\item[{vector$<$ float $>$}]{current\+Values }\end{DoxyParamCaption})}
+
+
+
+Returns the new value based on the sum of the current\+Values divided by the count of values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Values} & vector of current float values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new value 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{stencil_8cpp_af08413a3ee12cf78b0ddeea71e2648b3}\label{stencil_8cpp_af08413a3ee12cf78b0ddeea71e2648b3}} 
+\index{stencil.cpp@{stencil.cpp}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!stencil.cpp@{stencil.cpp}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily const int SIZE =4}
+
+array dimension 
