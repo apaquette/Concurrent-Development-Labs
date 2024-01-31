@@ -8,7 +8,7 @@ September 25th, 2023
 Alex Paquette
 
 ### GitHub Repo
-https://github.com/apaquette/LabOne
+[https://github.com/apaquette/LabOne](https://github.com/apaquette/ConcurrentDevelopmentLabs)
 
 ### Licence
 [GSL] https://www.gnu.org/software/gsl/
