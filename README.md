@@ -17,7 +17,7 @@ These labs were completed as part of my Concurrent Development module while stud
 2. Barriers
 3. Barriers (Reusable)
 4. Producer-Consumer
-5. DIning Philosophers
+5. Dining Philosophers
 6. OpenMD
 
 ## Technologies Used
