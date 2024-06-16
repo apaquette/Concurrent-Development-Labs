@@ -11,7 +11,7 @@ September 25th, 2023
 2. [Technologies Used](#technologies-used)
 
 ## Introduction
-These labs were completed as part of my Concurrent Development module at South East Technological University. They demonstrate various concurrent programming techniques in C++. Below are the labs completed for this module:
+These labs were completed as part of my Concurrent Development module while studying at South East Technological University. They demonstrate various concurrent programming techniques in C++. Below are the labs completed for this module:
 
 1. Semaphores
 2. Barriers
